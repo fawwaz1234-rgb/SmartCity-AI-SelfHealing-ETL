@@ -1,0 +1,18 @@
+# Generated datasets
+data/raw/
+
+# Delta tables
+data/bronze/
+data/silver/
+data/gold/
+
+# Quarantine & Logs
+data/quarantine/
+data/logs/
+
+# Python
+__pycache__/
+*.pyc
+
+# Notebook checkpoints
+.ipynb_checkpoints/
