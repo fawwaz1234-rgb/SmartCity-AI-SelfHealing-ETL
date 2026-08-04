@@ -1,79 +1,193 @@
-# 🚀 SmartCity AI - Self-Healing Data Quality Platform
+# 🚀 SmartCity AI - Self-Healing ETL Pipeline
 
-An AI-powered Data Quality Platform built using PySpark, Delta Lake, Databricks, and Gemini AI.
-
-The platform ingests Smart City data from multiple sources, detects anomalies, automatically heals recoverable data quality issues, validates repaired records, and stores trusted data using the Medallion Architecture (Bronze → Silver → Gold).
+An AI-powered Smart City Data Engineering project that simulates real-world transportation data, detects data quality issues, automatically repairs recoverable records, and stores trusted data using a Medallion Architecture (Bronze → Silver → Gold).
 
 ---
 
-## 📌 Project Status
+# 📖 Project Overview
 
-🚧 Under Development
+Modern Smart City platforms continuously collect operational data from multiple sources such as public transportation systems, emergency services, and IoT devices.
 
-Current Sprint:
-- [x] Sprint 1 - Project Design
-- [x] Sprint 2 - Data Modeling
-- [x] Sprint 3 - Self-Healing Engine Design
-- [x] Sprint 4 - Dataset & Architecture
-- [ ] Sprint 5 - Ingestion Layer
+Poor data quality can negatively impact analytics, reporting, and AI models.
+
+This project demonstrates how a modern Data Engineering pipeline can automatically identify, validate, and repair data quality issues before they reach downstream systems.
 
 ---
 
-## 🎯 Objectives
+# ✨ Current Features
 
-- Build a production-style ETL pipeline
-- Implement rule-based data validation
-- Integrate AI-assisted data healing
-- Measure data quality improvements
-- Store trusted data using Delta Lake
-- Create analytics-ready Gold tables
-- Generate AI-powered operational summaries
+## Smart City Data Simulator
+
+- Synthetic Bus GPS Dataset
+- Emergency Incident Dataset
+- Configurable Data Generator
+- JSON & CSV Output
 
 ---
 
-## 🛠 Tech Stack
+## Data Quality Testing Framework
 
-- PySpark
-- Databricks Community Edition
-- Delta Lake
-- Spark SQL
+Implemented test scenarios:
+
+- Missing Zone
+- Invalid GPS Coordinates
+- Negative Delay
+- Future Timestamp
+- Duplicate Bus ID
+
+Each scenario can be independently injected into the generated dataset to simulate real-world data quality problems.
+
+---
+
+# 🏗 Project Architecture
+
+```
+                Smart City Simulator
+                        │
+                        ▼
+                 Raw Dataset Generation
+                        │
+                        ▼
+           Data Quality Test Framework
+                        │
+                        ▼
+               Bronze Layer (Upcoming)
+                        │
+                        ▼
+             Validation & Rule Engine
+                        │
+                        ▼
+             AI Self-Healing (Gemini)
+                        │
+                        ▼
+                 Silver Layer
+                        │
+                        ▼
+                  Gold Analytics
+```
+
+---
+
+# 📂 Project Structure
+
+```
+SmartCity-AI-SelfHealing-ETL
+│
+├── config/
+│     simulator_config.json
+│
+├── utils/
+│     config.py
+│
+├── NoteBooks/
+│     Bronze/
+│         00_generate_datasets.ipynb
+│         01_ingestion.ipynb
+│
+└── README.md
+```
+
+---
+
+# 🛠 Technology Stack
+
 - Python
-- Gemini API
-- Open-Meteo API
+- Pandas
+- PySpark *(Upcoming)*
+- Delta Lake *(Upcoming)*
+- Databricks
 - Git & GitHub
+- Gemini AI *(Upcoming)*
 
 ---
 
-## 🏗 Architecture
+# 📊 Data Simulation
 
-Architecture diagram will be added after implementation.
+Instead of downloading static datasets, this project generates synthetic Smart City operational data.
 
----
+Current datasets include:
 
-## 📂 Project Structure
+- Bus GPS Data
+- Emergency Incident Data
 
-Project structure will be added after Sprint 5.
+Dataset generation is fully configurable through:
 
----
-
-## 📊 Dashboard
-
-Dashboard screenshots will be added later.
-
----
-
-## 📈 Pipeline Flow
-
-Coming soon...
+```
+config/simulator_config.json
+```
 
 ---
 
-## 🤖 AI Features
+# 🧪 Data Quality Framework
 
-Coming soon...
+The project currently supports the following data quality dimensions:
+
+| Dimension | Test Scenario |
+|-----------|---------------|
+| Completeness | Missing Zone |
+| Validity | Invalid GPS |
+| Accuracy | Negative Delay |
+| Timeliness | Future Timestamp |
+| Uniqueness | Duplicate Bus ID |
 
 ---
 
-## 📜 License
+# ▶️ How to Run
 
-MIT License
+1. Clone the repository
+
+2. Open the project in Databricks
+
+3. Run
+
+```
+NoteBooks/Bronze/00_generate_datasets.ipynb
+```
+
+to generate Smart City datasets.
+
+Future notebooks will automatically consume these datasets for the ETL pipeline.
+
+---
+
+# 🚧 Current Status
+
+## Completed
+
+- Smart City Simulator
+- Data Quality Testing Framework
+
+## In Progress
+
+- Bronze Layer Ingestion
+
+## Upcoming
+
+- Schema Validation
+- Rule Engine
+- AI Self-Healing
+- Silver Layer
+- Gold Layer
+- Monitoring Dashboard
+
+---
+
+# 📌 Project Roadmap
+
+- [x] Smart City Data Simulator
+- [x] Data Quality Framework
+- [ ] Bronze Layer
+- [ ] Validation Engine
+- [ ] Rule Engine
+- [ ] Gemini AI Integration
+- [ ] Silver Layer
+- [ ] Gold Layer
+- [ ] Dashboard
+
+---
+
+# 👨‍💻 Author
+
+**Mohammed Abdul Fawwaz**
+
+Data Engineering Portfolio Project
