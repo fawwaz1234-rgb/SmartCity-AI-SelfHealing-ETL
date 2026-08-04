@@ -1,0 +1,30 @@
+{
+  "bus_records": 10000,
+  "emergency_records": 8000,
+  "anomaly_percentage": 10,
+  "random_seed": 42,
+
+  "zones": [
+    "Zone A",
+    "Zone B",
+    "Zone C",
+    "Zone D",
+    "Zone E"
+  ],
+
+  "routes": [
+    "R101",
+    "R102",
+    "R103",
+    "R104",
+    "R105"
+  ],
+
+  "incident_types": [
+    "Accident",
+    "Fire",
+    "Medical",
+    "Road Block",
+    "Power Failure"
+  ]
+}
