@@ -30,3 +30,12 @@ INCIDENT_TYPES = [
     "Road Block",
     "Power Failure"
 ]
+
+# Project Paths
+
+RAW_PATH = "Data/raw"
+BRONZE_PATH = "Data/bronze"
+SILVER_PATH = "Data/silver"
+GOLD_PATH = "Data/gold"
+QUARANTINE_PATH = "Data/quarantine"
+LOG_PATH = "Data/logs"
