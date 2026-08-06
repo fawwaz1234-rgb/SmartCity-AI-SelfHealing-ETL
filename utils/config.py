@@ -31,11 +31,17 @@ INCIDENT_TYPES = [
     "Power Failure"
 ]
 
+# -----------------------------
 # Project Paths
+# -----------------------------
 
-RAW_PATH = "Data/raw"
-BRONZE_PATH = "Data/bronze"
-SILVER_PATH = "Data/silver"
-GOLD_PATH = "Data/gold"
-QUARANTINE_PATH = "Data/quarantine"
-LOG_PATH = "Data/logs"
+import os
+
+PROJECT_ROOT = os.path.abspath("/Workspace/Users/mabd95026@gmail.com/SmartCity-AI-SelfHealing-ETL")
+
+RAW_PATH = os.path.join(PROJECT_ROOT, "Data", "raw")
+BRONZE_PATH = os.path.join(PROJECT_ROOT, "Data", "bronze")
+SILVER_PATH = os.path.join(PROJECT_ROOT, "Data", "silver")
+GOLD_PATH = os.path.join(PROJECT_ROOT, "Data", "gold")
+QUARANTINE_PATH = os.path.join(PROJECT_ROOT, "Data", "quarantine")
+LOG_PATH = os.path.join(PROJECT_ROOT, "Data", "logs")
