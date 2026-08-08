@@ -449,7 +449,6 @@ Gold
 - ✅ Interactive Power BI Dashboard
 - ✅ Gold Layer Visualizations
 - ✅ KPI Dashboard
-- ✅ AI Repair Dashboard
 
 ---
 
